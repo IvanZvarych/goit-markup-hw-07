@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Эффективные решения для вашего бизнеса" />
+    <title lang="en">WebStudio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container--header">
+        <nav class="header-nav">
+          <a class="link link--logo" href="./index.html" lang="en"
+            ><span class="w-logo">Web</span>Studio</a
+          >
+          <ul class="list list--nav">
+            <li>
+              <a class="link" href="./index.html">Студия</a>
+            </li>
+            <li><a class="link link--current" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-contakt">
+          <a class="link link--email" href="mailto:info@devstudio.com">
+            <svg width="16" height="12" class="link__envelope">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+          <a class="link link--tel" href="tel:+380961111111">
+            <svg width="10" height="16" class="link__smartphone">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <!-- h1 HIDE!! -->
+        <h1 class="visually-hidden">Наше портфолио</h1>
+        <div class="container">
+          <ul class="list list--btn-container">
+            <li><button class="btn" type="button">Все</button></li>
+            <li><button class="btn" type="button">Веб-сайты</button></li>
+            <li><button class="btn" type="button">Приложения</button></li>
+            <li><button class="btn" type="button">Дизайн</button></li>
+            <li><button class="btn" type="button">Маркетинг</button></li>
+          </ul>
+
+          <ul class="list list--card-set">
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img
+                    class="image"
+                    src="./images/portfolio1.jpg"
+                    alt="Отркытый ноутбук"
+                    width="370"
+                  />
+                  <p class="card__img-overlay">
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов.
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Технокряк</h2>
+                  <p class="card__comment">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img
+                    class="image"
+                    src="./images/portfolio2.jpg"
+                    alt="Два баскетболиста с мячом"
+                    width="370"
+                  />
+                  <p class="card__img-overlay">
+                    Разработан макро-технологический постер, который позволяет только глядя в него
+                    не менее 3-х часов в день, прокачать свои баскетбольные скиллы не менее чем на
+                    +24 уровня вверх. И так каждый день!
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__comment">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img
+                    class="image"
+                    src="./images/portfolio3.jpg"
+                    alt="Логотип ресторана"
+                    width="370"
+                  />
+                  <p class="card__img-overlay">
+                    Новейшее приложение, в котором использованы последние достижения Репеты дают Вам
+                    возможность он-лайн посещения рыбного ресторана а также полного утоления голода
+                    в цифровом виде.
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Ресторан Seafood</h2>
+                  <p class="card__comment">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img class="image" src="./images/portfolio4.jpg" alt="Наушники" width="370" />
+                  <p class="card__img-overlay">
+                    Инновационный маркетинговый проект поможет Вам в самых неблагоприятных
+                    обстоятельствах принять решение приобрести даже то, что Вам совсем не нужно ни
+                    за что в жизни.
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Проект Prime</h2>
+                  <p class="card__comment">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img class="image" src="./images/portfolio5.jpg" alt="Две коробки" width="370" />
+                  <p class="card__img-overlay">
+                    Револиционное приложение разработанное искуственным интеллектом, который не спит
+                    и микросекунды, отображает картины жизни кубических сущностей. Пикассо
+                    переворачивается!
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Проект Boxes</h2>
+                  <p class="card__comment">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img class="image" src="./images/portfolio6.jpg" alt="Монитор" width="370" />
+                  <p class="card__img-overlay">
+                    Подоблачный сайт разрушающий границы вдохновения. Позволяет Ваше увлечение
+                    превратить во влачение. Вдохновение влачет увлечение. Увлечение вдохновляет
+                    влачение.
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Inspiration has no Borders</h2>
+                  <p class="card__comment">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img
+                    class="image"
+                    src="./images/portfolio7.jpg"
+                    alt="Открытый журнал"
+                    width="370"
+                  />
+                  <p class="card__img-overlay">
+                    Лимитированный дизайн предоставляет уникальную возможность поделиться с кем-либо
+                    чем-либо посредством чего-либо в границах существования всего. Либо чего-то.
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Издание Limited Edition</h2>
+                  <p class="card__comment">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img
+                    class="image"
+                    src="./images/portfolio8.jpg"
+                    alt="Ярлык с надписью"
+                    width="370"
+                  />
+                  <p class="card__img-overlay">
+                    Единственный в мире маркетинговый лабораториум делает Вас причастным к
+                    возможности продажи всего сущего с несуществующими возможностями по
+                    несущественным способностям.
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Проект LAB</h2>
+                  <p class="card__comment">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="link" href="#">
+                <div class="card__representation">
+                  <img
+                    class="image"
+                    src="./images/portfolio9.jpg"
+                    alt="Руки на клавиатуре ноутбука"
+                    width="370"
+                  />
+                  <p class="card__img-overlay">
+                    Приложение. Раскрывает перед Вами возможность взрастить Ваш бизнес за пределы.
+                    Пределы прилагаются, свои тащить нет надобности. Обращаться по уникальному
+                    адресу: поле Чудес, Лиса. Или лучше, Кот.
+                  </p>
+                </div>
+                <div class="card__label">
+                  <h2 class="card__caption">Growing Business</h2>
+                  <p class="card__comment">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container container--footer">
+        <div>
+          <a class="link link--f-logo" href="./index.html" lang="en"
+            ><span class="w-logo">Web</span>Studio</a
+          >
+          <address class="addr">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="list">
+            <li class="list__contakt">
+              <a class="link link--contakt" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="list__contakt">
+              <a class="link link--contakt" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="offer">
+          <p class="offer__label">присоединяйтесь</p>
+          <ul class="list list--f-social">
+            <li>
+              <a class="link link--f-social" href="#">
+                <svg class="footer-icon-social">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="link link--f-social" href="#">
+                <svg class="footer-icon-social">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="link link--f-social" href="#">
+                <svg class="footer-icon-social">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="link link--f-social" href="#">
+                <svg class="footer-icon-social">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="subscriber" action="#">
+          <label class="subscriber__label" for="mail-subscriber"> Подпишитесь на рассылку</label>
+          <input
+            class="subscriber__mail"
+            type="email"
+            name="subscriber-mail"
+            id="mail-subscriber"
+            placeholder="E-mail"
+          />
+          <button class="button button__subscriber" type="submit" name="subscriber-button">
+            Подписаться<svg class="button--send" width="24" height="24">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

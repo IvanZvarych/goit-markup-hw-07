@@ -1,0 +1,33 @@
+.section--skills {
+  padding-bottom: 0;
+}
+.list--skills {
+  display: flex;
+
+  & > :not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.list__header-3 {
+  @include font-design(() (), 700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.list__text {
+  width: 270px;
+  color: var(--main-color2);
+  @include font-design((), (), (), 14px, 1.71);
+  margin-top: 10px;
+}
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--bg-color);
+  border-radius: 4px;
+}
+.field__icon-skills {
+  width: 70px;
+  height: 70px;
+}

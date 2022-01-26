@@ -1,0 +1,52 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  list-style: none;
+}
+.link {
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  @include font-design((), (), 500, 14px, 1.14, 0.02em);
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: var(--transition-during);
+  transition-timing-function: var(--transition-cub);
+  // }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

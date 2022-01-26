@@ -1,0 +1,108 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-color2);
+}
+.container--footer {
+  display: flex;
+  justify-content: left;
+}
+.link--f-logo {
+  @include font-design(Raleway, normal, 700, 26px, 1.19, 0.03em);
+  color: var(--footer-color);
+}
+.addr {
+  @include font-design(inherit, normal, 400, 14px, 1.71, 0.03em);
+  color: var(--footer-color);
+  margin-top: 20px;
+}
+.link--contakt {
+  @include font-design((), (), 400, 14px, 1.71, 0.03em);
+  color: var(--footer-color2);
+}
+.list__contakt {
+  margin-top: 9px;
+}
+.offer {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.offer__label {
+  @include font-design(Roboto, normal, 700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  margin-bottom: 20px;
+}
+.list--f-social {
+  display: flex;
+
+  //separate social icons
+  & > :not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.link--f-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--main-color3);
+  background-color: var(--icon-bg);
+  transition-property: background-color;
+  transition-duration: var(--transition-during);
+  transition-timing-function: var(--transition-cub);
+  // }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.footer-icon-social {
+  width: 20px;
+  height: 20px;
+  fill: var(--footer-color);
+}
+.subscriber {
+  display: block;
+  margin-left: 93px;
+  margin-top: 12px;
+}
+.subscriber__label {
+  display: block;
+  @include font-design(Roboto, normal, 700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--footer-color);
+}
+.subscriber__mail {
+  margin-top: 20px;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  color: var(--footer-color2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+}
+// .subscriber__btn {
+//   width: 200px;
+//   height: 50px;
+//   padding: 0;
+//   border: 0;
+//   margin-left: 12px;
+//   background-color: var(--accent-color);
+//   color: var(--footer-color);
+//   @include font-design(Roboto, normal, 700, 16px, 1.87, 0.06em);
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+// }
+.button--send {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.button__subscriber {
+  margin-left: 12px;
+}
