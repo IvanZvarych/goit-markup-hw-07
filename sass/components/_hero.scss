@@ -1,4 +1,4 @@
-.section--hero {
+.hero {
   background-color: var(--hero-bg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-background.jpg);
@@ -17,8 +17,9 @@
   width: 691px;
   margin: 0 auto;
 }
-.button__hero {
+.button--hero {
   margin-top: 30px;
+
   &:hover,
   &:focus {
     background-color: #188ce8;

@@ -1,4 +1,4 @@
-.link--current {
+.current {
   color: var(--accent-color);
   // underline
   &::after {
@@ -13,13 +13,6 @@
   }
 }
 
-.link--logo {
-  @include font-design(Raleway, normal, 700, 26px, 1.19, 0.03em);
-  color: var(--color-logo);
-}
-.w-logo {
-  color: var(--accent-color);
-}
 .header {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
@@ -28,11 +21,18 @@
 .container--header {
   display: flex;
 }
-.header-nav {
+.nav {
   display: flex;
   align-items: center;
 }
-.list--nav {
+.nav__logo {
+  @include font-design(Raleway, normal, 700, 26px, 1.19, 0.03em);
+  color: var(--color-logo);
+}
+.w-logo {
+  color: var(--accent-color);
+}
+.nav__list {
   display: flex;
   margin: 0 0 0 93px;
 
@@ -58,12 +58,12 @@
     margin-left: 50px;
   }
 }
-.link--email {
+.nav__email {
   color: var(--main-color2);
   display: flex;
   align-items: center;
 }
-.link--tel {
+.nav__tel {
   color: var(--main-color2);
   display: flex;
   align-items: center;

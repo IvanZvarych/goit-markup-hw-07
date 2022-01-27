@@ -44,7 +44,7 @@ ul {
   transition-property: color;
   transition-duration: var(--transition-during);
   transition-timing-function: var(--transition-cub);
-  // }
+
   &:hover,
   &:focus {
     color: var(--accent-color);

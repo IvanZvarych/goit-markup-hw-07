@@ -375,11 +375,11 @@ ul {
           transition-timing-function: var(--transition-cub);
 }
 
-.link--current {
+.current {
   color: var(--accent-color);
 }
 
-.link--current::after {
+.current::after {
   content: '';
   position: absolute;
   bottom: -32px;
@@ -388,20 +388,6 @@ ul {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
-
-.link--logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--color-logo);
-}
-
-.w-logo {
-  color: var(--accent-color);
 }
 
 .header {
@@ -416,7 +402,7 @@ ul {
   display: flex;
 }
 
-.header-nav {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,22 +411,36 @@ ul {
           align-items: center;
 }
 
-.list--nav {
+.nav__logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-logo);
+}
+
+.w-logo {
+  color: var(--accent-color);
+}
+
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 0 93px;
 }
 
-.list--nav > :nth-child(n + 1) {
+.nav__list > :nth-child(n + 1) {
   position: relative;
 }
 
-.list--nav > :first-child {
+.nav__list > :first-child {
   margin-right: 50px;
 }
 
-.list--nav > :last-child {
+.nav__list > :last-child {
   margin-left: 50px;
 }
 
@@ -459,7 +459,7 @@ ul {
   margin-left: 50px;
 }
 
-.link--email {
+.nav__email {
   color: var(--main-color2);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,7 +469,7 @@ ul {
           align-items: center;
 }
 
-.link--tel {
+.nav__tel {
   color: var(--main-color2);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,7 +500,7 @@ ul {
           justify-content: left;
 }
 
-.link--f-logo {
+.f-logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -521,7 +521,7 @@ ul {
   margin-top: 20px;
 }
 
-.link--contakt {
+.contakt {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -550,17 +550,17 @@ ul {
   margin-bottom: 20px;
 }
 
-.list--f-social {
+.f-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.list--f-social > :not(:last-child) {
+.f-social > :not(:last-child) {
   margin-right: 10px;
 }
 
-.link--f-social {
+.f-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,7 +583,7 @@ ul {
           transition-timing-function: var(--transition-cub);
 }
 
-.link--f-social:hover, .link--f-social:focus {
+.f-social__link:hover, .f-social__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -635,7 +635,7 @@ ul {
   margin-left: 12px;
 }
 
-.section--hero {
+.hero {
   background-color: var(--hero-bg);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-background.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
@@ -659,33 +659,34 @@ ul {
   margin: 0 auto;
 }
 
-.button__hero {
+.button--hero {
   margin-top: 30px;
 }
 
-.button__hero:hover, .button__hero:focus {
+.button--hero:hover, .button--hero:focus {
   background-color: #188ce8;
 }
 
-.section--skills {
+.skills {
   padding-bottom: 0;
 }
 
-.list--skills {
+.skills__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.list--skills > :not(:last-child) {
+.skills__list > :not(:last-child) {
   margin-right: 30px;
 }
 
 .list__header-3 {
-  font-style: 700;
-  font-weight: 14px;
-  font-size: 1.14;
-  line-height: 0.03em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 30px;
@@ -728,7 +729,7 @@ ul {
   text-align: center;
 }
 
-.list--we-do {
+.we-do {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,7 +739,7 @@ ul {
   margin-top: 50px;
 }
 
-.list--we-do > :not(:last-child) {
+.we-do > :not(:last-child) {
   margin-right: 30px;
 }
 
@@ -772,18 +773,18 @@ ul {
   background: var(--bg-color);
 }
 
-.list--staffs {
+.command {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
 }
 
-.list--staffs > :not(:last-child) {
+.command > :not(:last-child) {
   margin-right: 30px;
 }
 
-.list--staffs > :nth-child(n + 1) {
+.command > :nth-child(n + 1) {
   background-color: var(--bg-card-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -814,7 +815,7 @@ ul {
   color: var(--main-color2);
 }
 
-.list--social-network {
+.staff__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,11 +825,11 @@ ul {
   margin: 0 auto;
 }
 
-.list--social-network > :not(:last-child) {
+.staff__social-list > :not(:last-child) {
   margin-right: 10px;
 }
 
-.link--social {
+.social-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,7 +851,7 @@ ul {
           transition-timing-function: var(--transition-cub), var(--transition-cub);
 }
 
-.link--social:hover, .link--social:focus {
+.social-link:hover, .social-link:focus {
   color: var(--icon-color);
   background-color: var(--accent-color);
 }
@@ -861,7 +862,7 @@ ul {
   fill: currentColor;
 }
 
-.list--client {
+.clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,7 +874,7 @@ ul {
   margin-top: 50px;
 }
 
-.list--client > .client {
+.clients-list > .client {
   display: block;
   -ms-flex-preferred-size: calc((100% + 30px) / 6 - 30px);
       flex-basis: calc((100% + 30px) / 6 - 30px);
@@ -890,8 +891,7 @@ ul {
   margin-top: 0;
 }
 
-/* =================================== */
-.link--client {
+.client__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,7 +914,7 @@ ul {
           transition-timing-function: var(--transition-cub), var(--transition-cub);
 }
 
-.link--client:hover, .link--client:focus {
+.client__link:hover, .client__link:focus {
   border-color: var(--accent-color);
 }
 
@@ -1195,19 +1195,19 @@ ul {
   outline: 2px solid var(--accent-color);
 }
 
-.button__modal {
+.button--modal {
   display: block;
   margin-right: auto;
   margin-left: auto;
   cursor: pointer;
 }
 
-.button__modal:hover, .button__modal:focus {
+.button--modal:hover, .button--modal:focus {
   background-color: #188ce8;
 }
 
 /* ---------------------------   BUTTONS     ---------- */
-.list--btn-container {
+.btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1216,7 +1216,7 @@ ul {
           justify-content: center;
 }
 
-.list--btn-container > :not(:last-child) {
+.btn-container > :not(:last-child) {
   margin-left: 8px;
 }
 
@@ -1233,6 +1233,7 @@ ul {
   border: transparent;
   padding: 6px 22px;
   border-radius: 4px;
+  cursor: pointer;
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
@@ -1248,10 +1249,6 @@ ul {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.btn:hover {
-  cursor: pointer;
 }
 
 /* -------------------    GRID   -------------- */
@@ -1279,7 +1276,7 @@ ul {
   color: var(--main-color2);
 }
 
-.list--card-set {
+.card-set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1291,7 +1288,7 @@ ul {
       flex-wrap: wrap;
 }
 
-.list--card-set > .card {
+.card-set > .card {
   background: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1301,11 +1298,11 @@ ul {
   margin-right: 30px;
 }
 
-.list--card-set > :nth-child(3n) {
+.card-set > :nth-child(3n) {
   margin-right: 0;
 }
 
-.list--card-set > :nth-child(-n + 3) {
+.card-set > :nth-child(-n + 3) {
   margin-top: 0;
 }
 

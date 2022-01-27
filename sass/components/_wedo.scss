@@ -1,8 +1,8 @@
 .header-2 {
-  @include font-design((), (), 700, 36px, 1.16);
+  @include font-design((), (), 700, 36px, 1.16, 0.03em);
   text-align: center;
 }
-.list--we-do {
+.we-do {
   display: flex;
   justify-content: center;
   margin-top: 50px;

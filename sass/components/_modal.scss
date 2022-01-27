@@ -54,7 +54,6 @@
   transition-property: fill;
   transition-duration: var(--transition-during);
   transition-timing-function: var(--transition-cub);
-  // }
 
   &:focus .icon-close,
   &:hover .icon-close {
@@ -179,11 +178,12 @@
 .form__input-checkbox:focus + .form__label-checkbox span {
   outline: 2px solid var(--accent-color);
 }
-.button__modal {
+.button--modal {
   display: block;
   margin-right: auto;
   margin-left: auto;
   cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: #188ce8;
